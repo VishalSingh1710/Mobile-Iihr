@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,12 +102,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.NewTest" hash-for-method="loginAsTester2">loginAsTester2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestTitle" hash-for-method="verifyHomeTitle">verifyHomeTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.NewTest" hash-for-method="verifyfunctionality1">verifyfunctionality1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestTitle" hash-for-method="verifyVariable">verifyVariable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -125,21 +125,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">firsttestpackage.NewTest</span>
+              <span class="class-name">TestTitle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginAsTester2">
-                  </a> <!-- loginAsTester2 -->
-                  <span class="method-name">loginAsTester2</span>
+                  <a name="verifyHomeTitle">
+                  </a> <!-- verifyHomeTitle -->
+                  <span class="method-name">verifyHomeTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyfunctionality1">
-                  </a> <!-- verifyfunctionality1 -->
-                  <span class="method-name">verifyfunctionality1</span>
+                  <a name="verifyVariable">
+                  </a> <!-- verifyVariable -->
+                  <span class="method-name">verifyVariable</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +147,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--734758618/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1424628308/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -156,7 +156,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;firsttestpackage.NewTest&quot;/&gt;
+      &lt;class name=&quot;TestTitle&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -180,6 +180,26 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">group1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomeTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyVariable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">group2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomeTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -198,18 +218,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginAsTester2')
-data.setCell(0, 2, 'firsttestpackage.NewTest')
-data.setCell(0, 3, 58687);
+data.setCell(0, 1, 'verifyHomeTitle')
+data.setCell(0, 2, 'TestTitle')
+data.setCell(0, 3, 403);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyfunctionality1')
-data.setCell(1, 2, 'firsttestpackage.NewTest')
-data.setCell(1, 3, 42077);
+data.setCell(1, 1, 'verifyVariable')
+data.setCell(1, 2, 'TestTitle')
+data.setCell(1, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 404 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -235,22 +255,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">firsttestpackage.NewTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">lauchingBrowser</span>
+                <span class="method-name">setBaseUrl</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">verifyfunctionality1</span>
-                <span class="method-start">3600 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">27410 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginAsTester2</span>
-                <span class="method-start">45680 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">27410 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyHomeTitle</span>
+                <span class="method-start">27410 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyVariable</span>
+                <span class="method-start">27814 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">104367 ms</span>
+                <span class="method-name">endSession</span>
+                <span class="method-start">27816 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

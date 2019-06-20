@@ -1,6 +1,7 @@
 package firsttestpackage;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.Test;
 import java.util.List;
 import java.util.Scanner;
@@ -277,11 +278,11 @@ public class NewTest {
 		}
 
 
-		////////////////SUBMIT/////////////////////////////////////////////////////////////////////////////////////////////////////
+		//////////////////////SUBMIT/////////////////////////////////////////////////////////////////////////////////////////////////////
 		driver.findElement(By.xpath("//input[@id=\"edit-submit\"]")).click();
 
 
-		/////////////////////GI/////////////////////////////////////////////////////////////////////////////////////////////////////
+		//////////////////////////GI/////////////////////////////////////////////////////////////////////////////////////////////////////
 		driver.findElement(By.xpath("//*[@id=\"block-menu-menu-iihrdashboard\"]/div[2]/ul/li[3]/span")).click();
 		Actions act1 = new Actions(driver);
 		WebElement menuHoverLink1 = driver.findElement(By.xpath("//*[@id=\"indent-management\"]"));
@@ -291,7 +292,7 @@ public class NewTest {
 		driver.findElement(By.xpath("//*[contains(text(),'GI_zolipe tester')]")).click();
 
 
-		////////////////////SELECT ACTIONS ///////////////////////////////////////////////////////////////////////////////////////////
+		//////////////////////SELECT ACTIONS ///////////////////////////////////////////////////////////////////////////////////////////
 		driver.findElement(By.xpath("//div[@id=\"edit_action_taken_chosen\"]")).click();
 		List<WebElement> allActions1 = driver.findElements(By.xpath("//*[@id=\"edit_action_taken_chosen\"]/div/ul//li"));
 		int asize1 = allActions1.size();
@@ -379,6 +380,7 @@ public class NewTest {
 
 		String VItext = driver.findElement(By.xpath("//*[contains(text(),'VI_zolipe tester')]")).getText();
 		System.out.println(VItext);
+		
 		System.out.println();
 		System.out.println();
 		
@@ -436,6 +438,7 @@ public class NewTest {
 		}
 		else
 			System.out.println("GI Duplicates are not presentfor this "+GItext);
+		
 		System.out.println();
 		System.out.println();
 
@@ -449,6 +452,7 @@ public class NewTest {
 
 		String WItext1 = driver.findElement(By.xpath("//*[contains(text(),'WI_zolipe tester')]")).getText();
 		System.out.println(WItext1);
+		
 		System.out.println();
 		System.out.println();
 
@@ -477,6 +481,7 @@ public class NewTest {
 		}
 		else 
 			System.out.println("Same GENERAL indent is not exist in inbox");
+		
 		System.out.println();
 		System.out.println();
 
