@@ -1,0 +1,16 @@
+package ReadExcelData;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class RealExcel {
+	public static void main(String[] args) throws Exception {
+		
+		File src = new File("home\\zolipe\\Desktop\\Vishal\\ExcelData\\TestData.xlxs");
+		
+		FileInputStream fls = new FileInputStream(src);
+		
+	}
+
+}

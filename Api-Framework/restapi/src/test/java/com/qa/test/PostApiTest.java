@@ -56,7 +56,9 @@ public class PostApiTest extends TestBase{
 		
 		
 		//obj to json
-		mapper.writeValue(new File("/home/zolipe/Desktop/Vishal/restapi/src/main/java/com/qa/data/users.json"), users);
+		mapper.writeValue(new File("/home/zolipe/Desktop/Vishal/Api-Framework/restapi/src/main/java/com/qa/data/users.json"), users);
+		
+	
 		
 		
 		

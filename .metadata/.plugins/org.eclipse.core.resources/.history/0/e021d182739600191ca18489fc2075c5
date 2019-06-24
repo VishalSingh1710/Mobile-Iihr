@@ -1,0 +1,32 @@
+package ReadExcelData;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class WriteExcelData {
+	public static void main(String[] args) throws Exception {
+		
+		File src = new File("/home/zolipe/Desktop/Vishal/AutomationExcel/Excel/TestData.xlsx");
+		
+		FileInputStream fls = new FileInputStream(src);
+		
+		
+		///////////////For xlsx file
+		XSSFWorkbook wb = new XSSFWorkbook(fls);
+		
+		////////////////For xls file
+		//HSSFWorkbook hb = new HSSFWorkbook(fls);
+		
+		XSSFSheet sheet1 = wb.getSheetAt(0);
+	
+		
+		
+		wb.close();
+	}
+
+}

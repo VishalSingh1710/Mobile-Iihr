@@ -1,0 +1,29 @@
+package com.qa.base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+
+public class TestBase {
+	public Properties prop;
+	
+	public TestBase(){
+	prop  = new Properties();
+	try {
+		FileInputStream ip  = new FileInputStream(System.getProperty("user.dir")+"//src/main//java//com//qa//config//config.properties");
+		//FileReader obj = new FileReader(ip);
+		prop.load(ip);
+	} 
+	catch (Exception e) {
+		
+	System.out.println("File not present exception");
+		
+	} 
+		
+		
+	}
+
+}
